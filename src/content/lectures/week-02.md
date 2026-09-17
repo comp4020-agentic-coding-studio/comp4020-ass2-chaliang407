@@ -1,23 +1,24 @@
 ---
-title: Second lecture
+title: Hold
 description:
-  Week 2 — the first substantive material, and the run-up to the first review
+  Week 2 — duration as a signal a button can give you before it's released
 week: 2
 date: 2027-03-01
 teachers:
-  - idris-fenn
+  - marisol-quaye
 related:
-  - sessions/02-first-review
-  - assessments/assignment-1
+  - week-01
+  - sessions/02-hold
 ---
 
-<!-- STARTER_CONTENT: replace this lecture, then remove this comment. -->
-
-Replace this page. It exists so the lectures listing sorts by week and the
-related block has more than one edge to draw.
+Week 1 treated a press as instantaneous. This week asks what's available
+*while the button is still down*: hold-duration, a continuous value measured
+from press to now. It's layered directly on top of last week's event — you
+can't measure a hold without first having something to start the clock.
 
 ## Outline
 
-- the first substantive material, and where it shows up in practice
-- what the first review is looking for
-- reading before next week
+- hold-duration as a continuous channel riding on top of a discrete event
+- why this week deliberately stops short of release — that's next week's
+  addition, not this one's
+- reading duration as feedback, before it's used to decide anything

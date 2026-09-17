@@ -1,30 +1,26 @@
 ---
-title: Opening lecture
+title: Press
 description:
-  The first lecture — what the course is, why it is shaped this way, and what
-  happens in week 1
+  The opening lecture — what "one button" actually means as a design
+  constraint, and why a press alone is worth a whole week
 week: 1
 date: 2027-02-22
 teachers:
   - marisol-quaye
-slides: /decks/week-01/
 related:
-  - sessions/01-getting-started
+  - sessions/01-press
 ---
 
-<!-- STARTER_CONTENT: replace this lecture, then remove this comment. -->
-
-Replace this page. A lecture entry says what was covered and links to the pages
-that own the detail, so the lecture stays short and nothing is explained twice.
-
-The `related:` ref above is a graph edge: it renders on this page and on the
-session's, so declare a connection once, on whichever side is convenient.
-
-The page renders its `slides:` link automatically. Decks are markdown too,
-under `src/decks/`; the path is part of the lecture's API metadata.
+The course's constraint in one sentence: every player action, all semester,
+comes from a single button. Not "mostly one button with a few exceptions" —
+one button, full stop. This lecture sets out why that's a design constraint
+worth twelve weeks rather than a limitation to work around, and introduces
+the smallest thing a button can do: a press.
 
 ## Outline
 
-- what the course is for
-- how the weeks are shaped
-- what to do before the first session
+- what "one button" rules out, and why the rule has no exceptions this
+  semester
+- the press as a discrete, edge-triggered event: it happens once, and
+  carries no duration or shape of its own
+- how the next eleven weeks each add exactly one thing on top of this

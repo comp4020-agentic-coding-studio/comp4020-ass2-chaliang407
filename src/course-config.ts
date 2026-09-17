@@ -40,23 +40,30 @@ export const slopCourseMetaSchema = z
 
 // The single source of truth for the course record. The generated homepage,
 // navigation label and /api/index.json all read this object.
-// Replace every placeholder value, but keep the shape: the catalogue ingests
-// this API contract when the course is published.
 //
 // The code's last three digits were assigned to this repo when it was
-// provisioned, and no other course in the cohort has them. Change the first
-// digit to your course's level (and `level` to match); keep the other three.
-// STARTER_CONTENT: replace this course record, then remove this comment.
+// provisioned, and no other course in the cohort has them, so SLOP1614 stays.
+// Level 1 (undergraduate, first digit of the code) is a deliberate choice,
+// not a leftover default: the course assumes no prior game-design or
+// programming background, only a willingness to build small playable things
+// every week.
+//
+// Teaching period: twelve weekly sessions/lectures run Monday 22 Feb 2027 to
+// Monday 10 May 2027; endDate extends eleven days past the last teaching
+// week so the final assessment's due date (the end of the teaching period
+// itself) falls inside it.
 export const courseMeta = slopCourseMetaSchema.parse({
   code: "SLOP1614",
-  title: "Course Title Goes Here",
+  title: "One Button, Twelve Games",
   session: "Semester 1",
   year: 2027,
   level: 1,
   startDate: "2027-02-22",
-  endDate: "2027-05-28",
+  endDate: "2027-05-21",
   description:
-    "One concise paragraph explaining what this course is, who it is for, " +
-    "and why somebody would choose to spend a semester taking it.",
-  tags: ["replace me"],
+    "A twelve-week course in how much interaction a single button can hold. " +
+    "Each week adds one new primitive to a shared vocabulary — press, hold, " +
+    "release, rhythm, sequence, momentum, context — building toward a " +
+    "complete one-button game.",
+  tags: ["game design", "interaction design", "constraints"],
 }) satisfies CourseMetaInput;
