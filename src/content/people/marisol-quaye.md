@@ -8,14 +8,15 @@ role: convenor
 email: marisol.quaye@slop.university
 contact: Email for course-level questions; use the weekly session for feedback on work.
 photo: ./marisol-quaye.avif
-photoAlt: A stylised portrait of a person in three-quarter view, flat gold and black shapes on warm cream, in a two-ink risograph print
+photoAlt: An abstract portrait mark, a dark head-and-shoulders shape against a gold block, with a solid gold ring on the shoulder, in flat two-ink risograph style
 ---
 
-<!-- STARTER_CONTENT: replace this person entry, then remove this comment. -->
+Marisol designed this course's vocabulary and teaches the opening and closing
+lectures. Outside SLOP1614 she works on input methods for players who cannot
+use a standard controller, which is most of why a one-button constraint
+turned into a whole semester rather than one exercise.
 
-Replace this entry. A people page carries a short bio and whatever a student
-needs in order to contact the right person for the right thing --- and nothing
-that will be stale by week 3.
-
-Consultation hours, contact preferences and the escalation path (who to ask
-first, who to ask when that does not work) are the parts students actually read.
+Office hours are Tuesdays 2–4pm, Building 9 room 214. Email for anything
+about marks, extensions, or the course as a whole; bring in-progress
+prototype questions to the studio session instead, where there is a screen to
+point at.

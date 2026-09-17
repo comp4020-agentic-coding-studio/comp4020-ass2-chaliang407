@@ -9,6 +9,7 @@ teachers:
   - marisol-quaye
 related:
   - sessions/01-press
+slides: /decks/week-01/
 ---
 
 Most software assumes at least two inputs exist: one to confirm, one to
