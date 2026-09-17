@@ -43,6 +43,5 @@ a near-miss should cost less to retry than a bad miss.
 
 ## By the end
 
-You can tell the difference between a game that punished you and a game that
-told you what happened, using only the channels this course has already
-built.
+You've drawn the line between a game that punished you and a game that told
+you what happened, using only the channels this course has already built.

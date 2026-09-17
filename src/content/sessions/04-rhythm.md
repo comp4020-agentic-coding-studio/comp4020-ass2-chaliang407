@@ -41,5 +41,5 @@ week's.
 
 ## By the end
 
-You can explain why "how long you held" and "how often you pressed" are
+You can separate "how long you held" from "how often you pressed" as
 different data channels from the same button, not two names for one idea.

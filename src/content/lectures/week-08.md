@@ -1,8 +1,8 @@
 ---
 title: Movement
 description:
-  Week 8 — mapping duration and momentum onto position and speed, with no
-  second input axis
+  Week 8 — the precision a single continuous signal gives up when it's
+  asked to control both timing and magnitude
 week: 8
 date: 2027-04-12
 teachers:
@@ -14,16 +14,24 @@ related:
   - sessions/08-movement
 ---
 
-Movement isn't a new capability this week — it's an application of two
-already built. Hold-duration (week 2) can drive jump height; momentum
-(week 6) can drive running speed; context (week 7) decides which mapping is
-active when. The point of this week is choosing and justifying a mapping,
-not discovering a new signal to map.
+Movement doesn't add a new way to read the button — it adds a new way to
+spend a signal you already have. Hold-duration or momentum, mapped onto a
+spatial value like jump height or run speed, do the job a joystick usually
+does, using the same one bit of input this whole course has insisted on.
+
+The trade-off worth naming is precision: a single continuous signal asked to
+control both *when* something moves and *how far* it goes gives a player
+less independent control over each than two separate inputs would. That
+loss isn't a bug to route around — it's the actual content of this week's
+design problem. A mapping succeeds when the coupling between timing and
+magnitude feels like a deliberate skill (a longer hold reliably means a
+higher jump) rather than an accident of reusing a signal that wasn't built
+for this.
 
 ## Outline
 
-- spatial mapping as reuse of existing continuous signals, not a new
-  primitive
-- the auto-run-plus-jump-height shape as one worked example, not the only
-  answer
-- why adding a second input axis here is a sign the mapping is wrong
+- movement as spending an existing continuous signal on a spatial mapping,
+  not a new capability
+- the precision trade-off of controlling both timing and magnitude from one
+  signal
+- what makes a spatial mapping feel deliberate rather than accidental

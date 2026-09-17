@@ -40,7 +40,13 @@ one piece of state you control (a threshold, a phase, a toggled flag). A
 player who has never seen either prototype before should be able to tell
 which mode is active from what's on screen — not by trial and error.
 
+This week's exercise stops at two mechanics on purpose — that's enough to
+prove the switch is legible. The Context Switch assessment later asks for
+the same technique at three mechanics or more, on your own, without a studio
+session to build it in first. Treat today's prototype as the technique
+you'll need to extend independently, not as the ceiling of what it can do.
+
 ## By the end
 
-You can explain why "one button" was never really a limit on how many things
-a press can mean — only on how many things can be pressed at once.
+You've confirmed that "one button" was never really a limit on how many
+things a press can mean — only on how many things can be pressed at once.

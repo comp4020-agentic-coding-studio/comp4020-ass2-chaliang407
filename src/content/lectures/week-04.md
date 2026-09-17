@@ -1,8 +1,8 @@
 ---
 title: Rhythm
 description:
-  Week 4 — what the gap between separate presses says, once we stop looking
-  inside a single gesture
+  Week 4 — tempo as a signal read between gestures, and why its tolerance
+  window has no correct answer
 week: 4
 date: 2027-03-15
 teachers:
@@ -13,14 +13,26 @@ related:
   - sessions/04-rhythm
 ---
 
-Weeks 2 and 3 both measured what happens inside one press-and-release
-gesture. This week deliberately looks elsewhere: the time *between* separate
-presses, going back to week 1's plain event and sampling it repeatedly.
-Rhythm and hold-duration are easy to confuse if you build them at the same
-time, which is why this week bans hold and release logic outright.
+Duration measures a single gesture from the inside; tempo measures a
+sequence of separate gestures from the outside, by the gaps between them.
+The two are easy to build as if they're the same thing — both come from
+timestamps — which is exactly why this week's session switches hold and
+release off: with either signal present, it's hard to tell whether a
+prototype is reading tempo or accidentally reading duration wearing a
+different name.
+
+The open design question for tempo is tolerance: how close to "on time"
+counts as on time? A ten-millisecond window makes every player feel
+unreliable; a one-second window makes the timing meaningless. Games that use
+rhythm as a mechanic live or die on where that number sits, and it isn't
+something you can derive from first principles — it has to be played and
+felt.
 
 ## Outline
 
-- inter-press interval as a distinct channel from hold-duration
-- why weeks 2–3's mechanics are switched off this week, on purpose
-- tempo, drift and acceleration as readable game states
+- tempo as a signal read between gestures, not inside one — and why the two
+  are easy to conflate by accident
+- why this week disables hold and release outright, rather than merely
+  discouraging their use
+- tolerance windows as a design decision with no correct answer, only a felt
+  one

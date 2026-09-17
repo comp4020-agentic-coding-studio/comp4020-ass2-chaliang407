@@ -1,8 +1,8 @@
 ---
 title: Failure
 description:
-  Week 9 — designing mistakes a player can read, now that there's enough
-  vocabulary to fail in more than one way
+  Week 9 — why not every mistake deserves its own signal, even once the
+  vocabulary can support one
 week: 9
 date: 2027-04-19
 teachers:
@@ -14,14 +14,26 @@ related:
   - sessions/09-failure
 ---
 
-This week couldn't have happened in week 1 or 2 — there was only one way to
-fail. Now there are several: released too early or late (week 3), broke a
-sequence (week 5), let momentum run out (week 6). Each deserves its own
-feedback, and its own proportionate cost to retry.
+A one-button game doesn't fail more simply than any other kind — it just has
+fewer channels to explain the failure through. That's exactly why failure
+had to wait until week 9: with only one mechanic active, there's only one
+way to lose, and a single failure state barely needs designing. Once
+release-timing, sequence-breaking, and momentum-decay can each go wrong
+independently, failure becomes something to design on purpose rather than
+something that just happens.
+
+The trade-off is restraint, not coverage. Giving every possible mistake its
+own distinct signal sounds thorough, but a player tracking five different
+failure states is tracking a system, not learning from a mistake. The design
+skill here is choosing which failures are worth making legible — usually the
+ones a player is likely to repeat — and letting the rest stay a plain,
+unremarkable loss.
 
 ## Outline
 
-- why legible failure depends on having more than one failure mode to tell
-  apart
-- feedback that names what happened, versus feedback that just says "no"
-- retry cost as part of the design, not an afterthought
+- why failure had to wait until the vocabulary was rich enough to fail in
+  more than one way
+- legible failure as a choice about which mistakes deserve a distinct
+  signal, not all of them
+- retry cost as the other half of legibility: what a mistake teaches, not
+  only what it costs

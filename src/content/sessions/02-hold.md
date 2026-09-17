@@ -38,5 +38,6 @@ you let go, only the readout while you're still holding.
 
 ## By the end
 
-You can explain hold-duration as a continuous channel layered on top of last
-week's discrete event, not as a new kind of input.
+Hold-duration now reads as a continuous channel layered on top of last
+week's discrete event — not a new kind of input, just a new way of reading
+the old one.

@@ -25,9 +25,13 @@ related:
 > Make one button mean three different things, and make it obvious which
 > one applies right now.
 
-The brief is deliberately narrow: this isn't about inventing a new mechanic,
-it's about combining ones you already have without confusing the player
-about which is currently active. A prototype that works but leaves a
+Week 7's session had you switch between two mechanics behind one piece of
+state — enough to prove the switch itself was legible. This assessment asks
+for the same technique again, on your own, extended to three mechanics or
+more. The brief is still not about inventing anything new: it's about
+combining vocabulary you already have without confusing the player about
+which mode is currently active, now that there's more for a player to keep
+straight than there was in the session. A prototype that works but leaves a
 first-time player guessing has not met the brief, whatever else it does
 well.
 

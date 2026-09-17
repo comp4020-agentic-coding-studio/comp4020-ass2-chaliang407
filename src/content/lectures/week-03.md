@@ -1,8 +1,8 @@
 ---
 title: Release
 description:
-  Week 3 — the release event, and why timing it against a hold turns one
-  gesture into a decision
+  Week 3 — why a release-timing failure has to feel earned, not like a
+  disguised coin flip
 week: 3
 date: 2027-03-08
 teachers:
@@ -12,15 +12,25 @@ related:
   - sessions/03-release
 ---
 
-Release is a second edge-triggered event, but it isn't independent of last
-week's hold-duration — it carries that duration as a payload. Releasing
-early, late, or on target changes the outcome. This is the charge-and-release
-mechanic in full, and it's why week 2 stopped short: duration alone was
-never the whole idea, only half of it.
+A hold-duration on its own is just a readout — nothing depends on it yet.
+Release changes that: the exact instant you let go samples the duration
+once, and that single sample decides an outcome. The same continuous channel
+from week 2 becomes, at the moment of release, a discrete scored decision —
+early, late, or on target — and that shift is what charge-and-release
+mechanics are built from.
+
+The design question worth sitting with is why a release-timing failure
+feels earned rather than arbitrary. A hidden coin flip disguised as a timing
+window would fail the same fraction of players, but wouldn't feel like their
+mistake. What separates felt timing from a disguised dice roll is a question
+week 9's failure design comes back to directly, once there's more than one
+way to lose.
 
 ## Outline
 
-- release as the second half of a two-part gesture, not a mechanic of its
-  own
-- charge-and-release as duration-plus-stakes, not a new signal
-- why a design can fail two different ways here — too early, and too late
+- how a continuous readout becomes a single scored sample at the instant of
+  release
+- charge-and-release as one instance of a wider pattern: duration, plus a
+  moment that cashes it in
+- why timing failure needs to feel earned rather than arbitrary — a question
+  week 9 answers directly

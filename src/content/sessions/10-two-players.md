@@ -41,5 +41,6 @@ if the game still plays the same alone, the dependency isn't real yet.
 
 ## By the end
 
-You can explain why "one button per player" is a much bigger design space
-than "one button total," and which earlier mechanics carry over into it.
+You can justify why "one button per player" is a much bigger design space
+than "one button total," and name which earlier mechanics carry over into
+it.

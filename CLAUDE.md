@@ -48,6 +48,26 @@ edge in frontmatter. A reader landing on week 8 should be able to tell, from
 the prose, that it needs week 2's hold-duration and week 6's momentum,
 without opening either page.
 
+## Lectures frame; sessions build
+
+Lectures and sessions must not paraphrase each other.
+
+A lecture should:
+- frame the week's central design problem
+- explain why the new interaction primitive matters
+- distinguish it from earlier primitives
+- introduce useful examples, consequences, or design trade-offs
+
+A session should:
+- turn that idea into a concrete making task
+- specify what the student builds
+- state constraints
+- give an observable way to tell whether the prototype works
+- assume the lecture framing rather than repeating it
+
+If deleting either page would lose almost no unique information, the pair
+needs revision.
+
 ## Plain, specific language
 
 Say what the mechanic does, in mechanical terms: "the bar fills while the
@@ -100,7 +120,8 @@ promises, and they are not interchangeable:
 
 - **Rules here** — generative constraints an agent (or a person) can follow
   while writing, but that no test can verify after the fact: one primitive
-  per week, the one-button constraint, plain language, examples on-topic.
+  per week, the one-button constraint, plain language, examples on-topic,
+  lectures framing rather than repeating their paired session.
 - **Checks in `spec/`** — structural promises the build output can actually
   verify: twelve teaching weeks, assessment weights summing to 100, later
   weeks carrying a `related:` edge into earlier material. These protect the
