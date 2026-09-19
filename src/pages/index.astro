@@ -6,6 +6,7 @@ import { withBase } from "astro-theme-university/url";
 import heroImage from "../assets/images/hero-home.avif";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
+import "../styles/site.css";
 ---
 
 <ContentLayout
@@ -13,8 +14,11 @@ import { sessionLabels, siteConfig } from "../site-config";
   description={courseMeta.description}
   heroImage={heroImage}
   heroImageAlt="A single button — a gold circular cap set in a dark housing — encircled by concentric rings in different stroke styles, in flat two-ink risograph print"
+  mainAttrs={{ "data-page": "home" }}
   {...siteConfig}
 >
+  <p class="hero-kicker">{courseMeta.code} · {courseMeta.session} {courseMeta.year}</p>
+
   <ul class="course-tags" aria-label="Course tags">
     {courseMeta.tags.map((tag) => <li>{tag}</li>)}
   </ul>
@@ -49,49 +53,34 @@ import { sessionLabels, siteConfig } from "../site-config";
     open than start from a blank, unrestricted brief.
   </p>
 
-  <h2>Start here</h2>
-  <p>
-    New to the course? <a href={withBase("/sessions/01-press/")}>Week 1: Press</a>{" "}
-    is the first studio session, and its{" "}
-    <a href={withBase("/lectures/week-01/")}>lecture</a> carries the opening
-    slide deck. Nothing earlier is assumed.
-  </p>
+  <div class="course-pathways">
+    <h2>Start here</h2>
+    <p>
+      New to the course? <a href={withBase("/sessions/01-press/")}>Week 1: Press</a>{" "}
+      is the first studio session, and its{" "}
+      <a href={withBase("/lectures/week-01/")}>lecture</a> carries the opening
+      slide deck. Nothing earlier is assumed.
+    </p>
 
-  <h2>Where to go next</h2>
-  <CardGrid columns={2}>
-    <Card title={sessionLabels.plural} href="/sessions/">
-      <p>The weekly schedule and what happens in each teaching session.</p>
-    </Card>
-    <Card title="Lectures" href="/lectures/">
-      <p>The framing behind each week's studio work, slide decks included.</p>
-    </Card>
-    <Card title="Assessment" href="/assessments/">
-      <p>What is marked, what it is worth, and when it is due.</p>
-    </Card>
-    <Card title="Policies" href="/policies/">
-      <p>Prototype work, collaboration, accessibility, tools, and late work.</p>
-    </Card>
-    <Card title="People" href="/people/">
-      <p>Who teaches the course and how to reach them.</p>
-    </Card>
-  </CardGrid>
+    <h2>Where to go next</h2>
+    <nav class="pathway-nav" aria-label="Course sections">
+      <CardGrid columns={2}>
+        <Card title={sessionLabels.plural} href="/sessions/">
+          <p>The weekly schedule and what happens in each teaching session.</p>
+        </Card>
+        <Card title="Lectures" href="/lectures/">
+          <p>The framing behind each week's studio work, slide decks included.</p>
+        </Card>
+        <Card title="Assessment" href="/assessments/">
+          <p>What is marked, what it is worth, and when it is due.</p>
+        </Card>
+        <Card title="Policies" href="/policies/">
+          <p>Prototype work, collaboration, accessibility, tools, and late work.</p>
+        </Card>
+        <Card title="People" href="/people/">
+          <p>Who teaches the course and how to reach them.</p>
+        </Card>
+      </CardGrid>
+    </nav>
+  </div>
 </ContentLayout>
-
-<style>
-  .course-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-block: 0 2rem;
-    padding: 0;
-    list-style: none;
-  }
-
-  .course-tags li {
-    padding: 0.25rem 0.65rem;
-    border-radius: 999px;
-    color: var(--at-text-secondary);
-    background: var(--at-bg-alt);
-    font-size: 0.9rem;
-  }
-</style>

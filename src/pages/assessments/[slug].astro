@@ -8,6 +8,7 @@ import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import MarkingModel from "../../components/MarkingModel.astro";
 import { formatCourseDate } from "../../lib/dates";
 import { graphCollections, siteConfig } from "../../site-config";
+import "../../styles/site.css";
 
 export async function getStaticPaths() {
   const assessments = await getPublishedCollection("assessments");
@@ -35,7 +36,7 @@ const { Content } = await render(assessment);
       </Callout>
     )
   }
-  <p><strong>Due:</strong> {formatCourseDate(assessment.data.due)} · <strong>Weight:</strong> {assessment.data.weight}%</p>
+  <p class="meta-line">Due {formatCourseDate(assessment.data.due)} · Weight {assessment.data.weight}%</p>
   <Content />
   <SpecList spec={assessment.data.spec}>
     The brief poses the problem and leaves room for a response. The spec is the
